@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #include <iostream>
 using namespace std;
 
@@ -27,34 +26,4 @@ int main()
     }
 
     return 0;
-=======
-#include <iostream>
-using namespace std;
-
-int main() 
-{
-    int n;
-
-    cout << "Enter the number of elements: ";
-    cin >> n;
-
-    int arr[n];
-
-    cout << "Enter array elements: ";
-    for (int i = 0; i < n; i++) 
-    {
-        cin >> arr[i];
-    }
-
-    int *ptr = arr + n - 1;
-
-    cout << "Array elements in reverse order: ";
-    for (int i = 0; i < n; i++) 
-    {
-        cout << *ptr << " ";
-        ptr--;
-    }
-
-    return 0;
->>>>>>> 88d756b13c85e6ab7637199adca29c4176bae2ea
 }

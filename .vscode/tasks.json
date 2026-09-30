@@ -1,54 +1,31 @@
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "Build 2a.exe",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "2a.cpp",
-        "-o",
-        "2a.exe"
-      ],
-      "group": {
-        "kind": "build",
-        "isDefault": true
-      },
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      "label": "Build 2b.exe",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "2b.cpp",
-        "-o",
-        "2b.exe"
-      ],
-      "problemMatcher": [
-        "$gcc"
-      ]
-    },
-    {
-      "label": "Build active file",
-      "type": "shell",
-      "command": "g++",
-      "args": [
-        "-std=c++17",
-        "-g",
-        "${file}",
-        "-o",
-        "${fileDirname}/${fileBasenameNoExtension}.exe"
-      ],
-      "problemMatcher": [
-        "$gcc"
-      ]
-    }
-  ]
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build C",
+            "type": "shell",
+            "command": "D:\\msys64\\ucrt64\\bin\\gcc.exe",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        },
+        {
+            "label": "Build C++",
+            "type": "shell",
+            "command": "D:\\msys64\\ucrt64\\bin\\g++.exe",
+            "args": [
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ]
 }

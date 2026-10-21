@@ -28,7 +28,7 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "externalConsole": false,
+      "externalConsole": true,
       "cwd": "d:/Data-Structure",
       "program": "d:/Data-Structure/build/Debug/outDebug",
       "MIMode": "gdb",

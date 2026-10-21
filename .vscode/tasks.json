@@ -8,7 +8,7 @@
             "args": [
                 "${file}",
                 "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+                "${env:TEMP}\\${fileBasenameNoExtension}.exe"
             ],
             "problemMatcher": [
                 "$gcc"
